@@ -1,14 +1,13 @@
 from random import randint
-from getpass import getpass
 
 # Game features to be added
 # two modes - PvP, Computrerk
 
 
 options = ["snake", "water", "gun"]
-cases = {"draw": [["gun", "gun"], ["water", "water"], ["snake", "snake"]],
-         "win": [["snake", "water"], ["water", "gun"], ["gun", "snake"]],
-         "lose": [["snake", "gun"], ["water", "snake"], ["gun", "water"]]
+cases = {"draw": {["gun", "gun"], ["water", "water"], ["snake", "snake"]},
+         "win": {["snake", "water"], ["water", "gun"], ["gun", "snake"]},
+         "lose": {["snake", "gun"], ["water", "snake"], ["gun", "water"]}
          }
 
 [print(i, "-", options[i]) for i in range(3)]
