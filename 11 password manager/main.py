@@ -3,6 +3,7 @@
 2-Set new passwords
 3-Update passwords
 4-Passwords will be stored in encrypted form'''
+secret_key=""
 import encrypter as enc
 
 
